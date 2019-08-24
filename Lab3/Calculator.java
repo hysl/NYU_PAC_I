@@ -5,7 +5,7 @@ September 27, 2017
 
 import java.util.Scanner;
 
-public class calculator
+public class Calculator
 {
 	public static void main (String args [])
 	{
