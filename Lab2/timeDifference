@@ -16,25 +16,18 @@ public class timeDifference
 		int num2 = input.nextInt();
 		
 		int firstHour = (num1 / 10000) * 3600;
-		//isolates HH and converts to seconds
 		int firstMin = ((num1 / 100) % 100) * 60;
-		//isolates HHMM, extracts MM, and converts to seconds
 		int firstSec = num1 % 100;
-		//extracts SS
 
 		int secondHour = (num2 / 10000) * 3600;
 		int secondMin = ((num2 / 100) % 100) * 60;
 		int secondSec = num2 % 100;
 
 		int diff = (firstHour + firstMin + firstSec) - (secondHour + secondMin + secondSec);
-		//finds time difference in seconds
 
 		int diffHour = (diff / 3600) * 10000;
-		//finds int HH, and converts to HHMMSS format
 		int diffMin = ((diff / 60) - ((diff / 3600) * 60)) * 100;
-		//finds int MM, minus int HH in minutes, and converts to HHMMSS format
 		int diffSec = diff % 60;
-		//finds int SS
 
 		int newDiff = diffHour + diffMin + diffSec;
 
