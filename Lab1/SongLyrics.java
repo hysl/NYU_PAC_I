@@ -3,7 +3,7 @@ Helen Li
 September 13, 2017
 */
 
-public class songLyrics 
+public class SongLyrics 
 {
 	public static void main(String args[]) 
 	{
