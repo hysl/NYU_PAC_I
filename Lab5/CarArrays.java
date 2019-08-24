@@ -6,7 +6,7 @@ October 11, 2017
 import java.util.Scanner;
 import java.util.Random;
 
-public class carArrays
+public class CarArrays
 {
 	public static void main (String args [])
 	{
@@ -101,8 +101,6 @@ public class carArrays
 	}
 
 
-
-	// Generate a random number between 1 and 20, and then return it
 	public static int randomizePosition (int originalPost)
 	{
 		originalPost = 1 + (int)(Math.random() * 20);
@@ -110,8 +108,6 @@ public class carArrays
 	}
 
 
-
-	// Return one of the following colors randomly: (R)ed, (G)reen, (B)lack, (W)hite, or (S)ilver
 	public static char assignColor (char colorChar)
 	{
 		int color = 0;
@@ -140,9 +136,6 @@ public class carArrays
 	}
 
 
-
-	// Take as its parameter the car's current ignition switch and then it should return the opposite
-	// of that ignition's value. If the car is off, then this method will return true
 	public static boolean ignitionSwitch (boolean currentIgnition)
 	{
 		if (currentIgnition == false)
@@ -157,13 +150,6 @@ public class carArrays
 	}
 
 
-
-	// Requires the car's x coordinate, the user's inputted movement distance, and the ignition
-	// state of the car
-	// If the ignition is off, the method should notify the user as such and return the current,
-	// unchanged x coordinate. If ignition is on, method should check to see if movement is in bounds.
-	// If it is, then change the x coordinate and return its value. If not, notify user as such
-	// and return the unchanged x coordinate
 	public static int moveHorizontally (int xPosition, int moveH, boolean ignition)
 	{
 		if (ignition == true)
@@ -186,13 +172,6 @@ public class carArrays
 	}
 
 
-
-	// Requires the car's y coordinate, the user's inputted movement distance, and the ignition
-	// state of the car
-	// If the ignition is off, the method should notify the user as such and return the current,
-	// unchanged y coordinate. If ignition is on, method should check to see if movement is in bounds.
-	// If it is, then change the y coordinate and return its value. If not, notify user as such
-	// and return the unchanged y coordinate
 	public static int moveVertically ( int yPosition, int moveV, boolean ignition)
 	{
 		if (ignition == true)
@@ -215,9 +194,6 @@ public class carArrays
 	}
 
 
-
-	// Need all of the car's parameters to display the car's current status and generate the grid
-	// correctly (with the car in its position)
 	public static void reportState (char carColor, boolean ignition, int xPosition, int yPosition, int currentIndex)
 	{
 		System.out.println("\nCar Information:\n");
