@@ -5,7 +5,7 @@ September 20, 2017
 
 import java.util.Scanner;
 
-public class timeDifference 
+public class TimeDifference 
 {
 	public static void main (String args[]) 
 	{
