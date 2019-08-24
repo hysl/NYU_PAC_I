@@ -8,15 +8,6 @@ import java.util.Random;
 
 public class carArrays
 {
-	// Ten cars can be controlled. There will be an array for each attribute that a car should
-	// have. Each car will have an associated index in every array (car # and index # will be off
-	// by one). Before main menu is presented, user will select a car. Any changes made will affect
-	// only the car selected. After new state is reported for selected car, begin process again and
-	// ask user to select a car (error checking not needed forinput for car #).
-	// State reporting - no need to print every car to grid; just selected one. Print car #.
-	// Error checking - program should be able to handle invalid input at the main menu and second
-	// menu and print a message letting user know what they just entered cannot be accepted.
-	// Error checking - can assume movement distance will always be an integer, but movement could
 	public static void main (String args [])
 	{
 		Scanner input = new Scanner(System.in);
@@ -226,13 +217,7 @@ public class carArrays
 
 
 	// Need all of the car's parameters to display the car's current status and generate the grid
-	// correctly (with the car in its position). The status of the car should be properly formatted,
-	// so the ignition should not say "true" or "false" but rather "on" or "off". The color of the
-	// car should have the full word spelled out. Lastly, the position of the car should be
-	// given as an (X,Y) coordinate pair.
-	// In order to make the grid, consider how many loops might be used to iterate through the
-	// different rows and columns of the grid. A "-" would be printed for each spot except for the
-	// one where the car is currently located.
+	// correctly (with the car in its position)
 	public static void reportState (char carColor, boolean ignition, int xPosition, int yPosition, int currentIndex)
 	{
 		System.out.println("\nCar Information:\n");
