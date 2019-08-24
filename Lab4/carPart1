@@ -8,17 +8,6 @@ import java.util.Random;
 
 public class carPart1
 {
-	// First, the car should be "created" by assigning values to its attributes using methods
-	// Then the program will present the user with a menu option (including one to quit the program).
-	// Depending on the selected option, different methods will be called.
-	// The car's variables should be changed within main(), not within the different methods.
-	// For the movement option, the secondary menu should be generated within the main(),
-	// not in the moveHorizontally() or moveVertically() methods. Once a valid choice is made,
-	// one of the two methods may be called.
-	// Error checking - program should be able to handle invalid input at the main menu and second
-	// menu and print a message letting user know what they just entered cannot be accepted.
-	// Error checking - can assume movement distance will always be an integer, but movement could
-	// potentially move the car out of bounds
 	public static void main (String args [])
 	{
 		Scanner input = new Scanner(System.in);
@@ -217,13 +206,7 @@ public class carPart1
 
 
 	// Need all of the car's parameters to display the car's current status and generate the grid
-	// correctly (with the car in its position). The status of the car should be properly formatted,
-	// so the ignition should not say "true" or "false" but rather "on" or "off". The color of the
-	// car should have the full word spelled out. Lastly, the position of the car should be
-	// given as an (X,Y) coordinate pair.
-	// In order to make the grid, consider how many loops might be used to iterate through the
-	// different rows and columns of the grid. A "-" would be printed for each spot except for the
-	// one where the car is currently located.
+	// correctly (with the car in its position)
 	public static void reportState (char carColor, boolean ignition, int xPosition, int yPosition)
 	{
 		System.out.println("\nCar Information:\n");
